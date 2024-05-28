@@ -31,14 +31,21 @@ h1 {
     font-size: 1rem;
     border: none;
     border-radius: 10px 0 0 10px;
+    &:focus{
+      outline: none;
+    }
   }
   button {
     padding: 10px 20px;
+    border: 0px;
     border-radius: 0 10px 10px 0;
     font-size: 0.8;
     font-weight: bold;
     background-color: #007000;
     color: $white;
+    &:active {
+      border-style: outset;
+    }
   }
 }
 
