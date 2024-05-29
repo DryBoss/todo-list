@@ -43,9 +43,7 @@ function TodoList(){
   }
 
   function handleDeleteClick(index){
-    let updatedTask = toDoList.filter((_, currentIndex) =>  {
-                                                              index != currentIndex
-                                                            })
+    let updatedTask = toDoList.filter((_, currentIndex) => index !== currentIndex)
     setToDoList(updatedTask)
   }
 
