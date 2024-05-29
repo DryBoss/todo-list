@@ -63,9 +63,9 @@ function TodoList(){
                                               onChange={event => {
                                                 toDo[0] = toDo[0] ? 0 : 1
                                                 event.target.checked = toDo[0]
-                                                document.getElementById("task-text").style.textDecoration = toDo[0] ? "line-through" : "none"
+                                                document.getElementById(`task-text-${index}`).style.textDecoration = toDo[0] ? "line-through" : "none"
                                               }}/>
-                                            <span id="task-text">
+                                            <span id={`task-text-${index}`}>
                                               {toDo[1]}
                                             </span>
                                             <img style={styleUpDown} src={Up} alt="up" onClick={() => handleUpClick(index)}/>
