@@ -54,7 +54,7 @@ function TodoList(){
       <h1>ToDO List</h1>
       <div className="add-todo">
         <input type="text" id="task-input" placeholder="Enter new task..."/>
-        <button onClick={handleAddClick}>ADD</button>
+        <button onClick={handleAddClick}>Add</button>
       </div>
       <div className="todo-list">
         <ul>
